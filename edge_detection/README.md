@@ -45,3 +45,17 @@ Edge Detection
 
 # Why do this before edge detection?
 Because it removes unnecessary details and simplifies the image.
+
+
+## Adaptive Thresholding
+
+| Feature             |                      Threshold |            Adaptive Threshold |
+| ------------------- | -----------------------------: | ----------------------------: |
+| Threshold value     |                One fixed value | Changes for different regions |
+| Lighting conditions | Works well in uniform lighting | Works well in uneven lighting |
+| Speed               |                         Faster |               Slightly slower |
+| Accuracy            |             Lower with shadows |           Better with shadows |
+
+## Otsu Thresholding
+
+Otsu automatically finds the best threshold value instead of you manually writing 127, 150, etc.
